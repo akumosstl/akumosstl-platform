@@ -1,0 +1,33 @@
+[
+    {
+        "name": "pom.xml",
+        "path": "app.spring.jwt?pom.xml",
+        "template": "tmpl.spring.jwt?pom.xml",
+        "namespace": "io.github.apedrina",
+        "description": "creating root pom.xml file!",
+        "map": [
+            {
+                "{{groupId}}":"io.github.apedrina.akumos",
+                "{{artifactId}}":"spring-jwt",
+                "{{version}}":"1.0-SNAPSHOT",
+                "{{name}}":"Archetype - spring-jwt",
+                "{{compilerSource}}":"11",
+                "{{compilerTarget}}":"11"
+            }
+        ]
+    },
+    {
+        "name": "bootstrap.yaml",
+        "path": "app.spring.jwt.src.main.resources?bootstrap.yaml",
+        "template": "tmpl.spring.jwt.src.main.resources?bootstrap.yaml",
+        "namespace": "io.github.apedrina",
+        "description": "creating bootstrap.yaml file!"
+    },
+    {
+        "name": "application.yaml",
+        "path": "app.spring.jwt.src.main.resources?application.yaml",
+        "template": "tmpl.spring.jwt.src.main.resources?application.yaml",
+        "namespace": "io.github.apedrina",
+        "description": "creating application.yaml file!"
+    }
+]
