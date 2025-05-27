@@ -128,7 +128,39 @@ class App {
                 return v.toString(16);
             });
     }
+    run(v) {
+        let mapper_config = JSON.parse(this.get(v))
 
+        for (var k in mapper_config) {
+            let t = new Template()
+            t.name = mapper_config[k].name
+            t.path = mapper_config[k].path
+            let tmpl = mapper_config[k].template
+            if (tmpl.startsWith('app.')) {
+                tmpl = tmpl.replace('app.', 'this.')
+                t.template = eval(tmpl)
+            } else {
+                t.template = this.get(mapper_config[k].template)
+            }
+
+            let map = mapper_config[k].map
+            for (var o in map) {
+                Object.entries(map[o]).forEach(([key, value]) => {
+                    if (value.startsWith('app.')) {
+                        let caller = eval(value.replace('app.', 'this.'))
+                        map[o][key] = caller
+
+                    }
+                })
+
+            }
+            t.addConfig(map)
+            t.bind()
+
+            this.create(t)
+        }
+
+    }
     show(v) {
         let obj = undefined
         for (var i in this.templates) {
@@ -235,7 +267,7 @@ class App {
                 e.appendChild(s)
             })
 
-        } 
+        }
         obj.elements.set(data_name, e)
         return e
     }

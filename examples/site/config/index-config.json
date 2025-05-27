@@ -1,0 +1,18 @@
+[
+    {
+        "name": "index.html",
+        "path": "app?index.html",
+        "template": "app.get('tmpl.html?index.html')",
+        "namespace": "io.github.akumosstl",
+        "description": "creating a index.html file!",
+        "map": [
+            {
+                "{{js_area}}": "app.get('tmpl.html?index_js.html')",
+                "{{footer_area}}": "app.get('tmpl.html?index_footer.html')",
+                "{{accomodation_area}}":"app.get('tmpl.html?index_accomodation.html')",
+                "{{header_area}}": "app.get('tmpl.html?index_header.html')",
+                "{{banner_area}}": "app.get('tmpl.html?index_banner.html')"
+            }
+        ]
+    }
+]

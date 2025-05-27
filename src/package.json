@@ -13,6 +13,6 @@
   "akumos": "./bin/index.js"
  },
  "dependencies": {
-  "yargs": "13.2"
+ 
  }
 }
