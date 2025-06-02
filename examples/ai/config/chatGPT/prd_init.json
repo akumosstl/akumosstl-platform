@@ -1,0 +1,14 @@
+[
+    {
+        "name": "chat_gpt_prd_prompt",
+        "path": "app.chat_gpt?prd_prompt.txt",
+        "template": "app.get('tmpl.chatGPT?prd_init.txt')",
+        "namespace": "io.github.akumosstl",
+        "description": "creating a Product Requirements Document (PRD) for chatGPT!",
+        "map": [
+            {
+                "[background_information]": "app.get('tmpl.html?index_js.html')"
+            }
+        ]
+    }
+]

@@ -1,0 +1,11 @@
+Context: 
+{{context}}
+
+Core features: 
+{{core_features}}
+
+Technology Stack: 
+{{technolgy_stack}}
+
+User Interface: 
+{{user_interface}}

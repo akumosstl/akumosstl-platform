@@ -34,7 +34,7 @@ if (argv.length === 0) {
 
     }
     if (!fs.existsSync('main.js')) {
-      fs.writeFileSync(process.cwd() + path.sep + '/main.js', `(function(app){\n  console.log('running akumos project...')  \n})(app)`)
+      fs.writeFileSync(process.cwd() + path.sep + '/main.js', `((app) => {\n  console.log('running akumos project...')  \n})(app)`)
 
     }
   } catch (err) {

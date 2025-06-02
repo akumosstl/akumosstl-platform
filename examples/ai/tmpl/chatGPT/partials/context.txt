@@ -1,0 +1,2 @@
+A NaveSTL Site is a web site that allows users to booking rooms to specific date.
+The site has a section where it shows pictures/photos of rooms.

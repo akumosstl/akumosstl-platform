@@ -11,7 +11,7 @@
                 "{{footer_area}}": "app.get('tmpl.html?index_footer.html')",
                 "{{accomodation_area}}":"app.get('tmpl.html?index_accomodation.html')",
                 "{{header_area}}": "app.get('tmpl.html?index_header.html')",
-                "{{banner_area}}": "app.get('tmpl.html?index_banner.html')"
+                "{{carousel_area}}": "app.get('tmpl.html?index_carousel.html')"
             }
         ]
     }

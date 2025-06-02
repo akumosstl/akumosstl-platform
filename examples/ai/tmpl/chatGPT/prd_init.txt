@@ -1,0 +1,4 @@
+Context: [background_information]
+Task: Generate [specific_section]
+Requirements: [Key_elements_to_include]
+Format: [desired_structure]

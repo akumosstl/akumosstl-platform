@@ -1,0 +1,2 @@
+* the photos/pictures site section should has a carousel feature
+* the first site section should be a carousel showing three photos 

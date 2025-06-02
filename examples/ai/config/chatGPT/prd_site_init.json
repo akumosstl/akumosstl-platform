@@ -1,0 +1,17 @@
+[
+    {
+        "name": "chat_gpt_site_prd_prompt",
+        "path": "app.chat_gpt.site?prd_prompt.txt",
+        "template": "app.get('tmpl.chatGPT?prd_site.txt')",
+        "namespace": "io.github.akumosstl",
+        "description": "creating a site app Product Requirements Document (PRD) for chatGPT!",
+        "map": [
+            {
+                "{{context}}": "app.get('tmpl.chatGPT?context.txt')",
+                "{{core_features}}":"app.get('tmpl.chatGPT?core_features.txt')",
+                "{{technolgy_stack}}":"app.get('tmpl.chatGPT?technology_stack.txt')",
+                "{{user_interface}}":"app.get('tmpl.chatGPT?user_interface.txt')"
+            }
+        ]
+    }
+]

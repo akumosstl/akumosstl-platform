@@ -11,8 +11,5 @@
  "license": "MIT",
  "bin": {
   "akumos": "./bin/index.js"
- },
- "dependencies": {
- 
  }
 }

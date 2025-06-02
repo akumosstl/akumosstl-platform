@@ -1,0 +1,24 @@
+Context: 
+A NaveSTL Site is a web site that allows users to booking rooms to specific date.
+The site has a section where it shows pictures/photos of rooms.
+
+Core features: 
+1 - booking
+ * users can input throught a text field and with help a calendar component either the initial date and the leave date.
+ * users can input throught a text field the number of guests for the chosen date.
+
+2 - gallery
+ * the site should has a section showing rooms photos
+ 
+
+Technology Stack: 
+1 - Frontend
+ * bootstrap 5
+ * html
+ * css
+ * js
+
+
+User Interface: 
+* the photos/pictures site section should has a carousel feature
+* the first site section should be a carousel showing three photos 
