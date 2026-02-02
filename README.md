@@ -41,10 +41,10 @@ npm (bundled with Node.js)
 📥 ***Installation***
 
 Clone the repository:
-
+```bash
 git clone https://github.com/akumosstl/akumosstl-platform.git
 cd akumosstl-platform
-
+```
 
 Then install globally:
 
