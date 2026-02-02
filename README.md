@@ -1,87 +1,158 @@
-### Akumos Platform
+Akumos Platform
 
-Akumos Platform is a code template engine. 
+Akumos Platform is a prompt engineering assistant engine — a code template engine with enhanced templates and integrations.
 
-# Install
+It enables developers to quickly scaffold, compile, and manage template-driven projects using a command-line interface.
 
-Requirements:
+🚀 Note: This README assumes familiarity with CLI tools and Node.js ecosystems. If you're exploring alternatives to template engines (e.g., Yeoman, Slush), see the “Alternatives & Comparisons” section below.
 
-- nodeJs
+🧠 Key Concepts
 
-Clone this repository, navigate to 'src' folder and run:
+At its core, Akumos provides:
 
-```bash
+A template engine to generate project scaffolds.
+
+CLI tooling for project initialization and compilation.
+
+A structure optimized for modular and reusable templates.
+
+Examples to jump-start development.
+
+🛠️ Features
+
+Project bootstrapping (akumos init)
+
+Template compilation (akumos cp)
+
+Integration-ready with custom templates and workflows
+
+Minimal dependencies and easy extendability
+
+Example projects included under examples/
+
+📦 Prerequisites
+
+Before installing, make sure you have:
+
+Node.js (v14+ recommended)
+
+npm (bundled with Node.js)
+
+📥 Installation
+
+Clone the repository:
+
+git clone https://github.com/akumosstl/akumosstl-platform.git
+cd akumosstl-platform
+
+
+Then install globally:
 
 sudo npm install -g .
 
-```
+🚀 Getting Started
 
-Now from everywhere you can call akumos-cli tool. 
+After installation, you can create a new project:
 
-To init a new project create a folder call: 'hello-world'. 
+Create and navigate to a new directory:
 
-Inside the 'hello-world' folder type:
+mkdir my-app && cd my-app
 
-```bash
+
+Initialize the project:
 
 akumos init
 
-```
 
-Then to compile run:
-
-```bash
+Compile/templates:
 
 akumos cp
 
-```
 
-The output will be generated at 'build/' folder.
+The engine generates an output in the build/ directory by default.
 
-### Hello World
+📁 Project Structure
 
-Go to 'examples/hello-world' folder and compile the project:
+Typical structure of an Akumos scaffold:
 
-```bash
+hello-world/
+├─ app/
+├─ build/
+├─ config/
+├─ libs/
+├─ src/
+├─ tmpl/
+├─ main.js
+└─ project.json
 
+
+app/: Runtime artifacts
+
+build/: Generated code
+
+config/: Configuration files (.json)
+
+libs/: Support modules
+
+src/: Source code for templates
+
+tmpl/: Templating assets
+
+main.js: Entry point
+
+project.json: Project metadata
+
+📘 Examples
+
+Check the examples/ folder for ready-to-run sample projects.
+
+cd examples/hello-world
 akumos cp
 
-```
 
-# New project
+This demonstrates a typical Akumos project lifecycle.
 
-When you run the 'init' command akumos-cli will generate the project's folder structure like this:
+🧪 Testing & Validation
 
-```bash
+Include test commands here if available — currently none are provided.
 
-hello-world
-    |_app
-    |_build
-    |_config
-    |_libs
-    |_src
-    |_tmpl
-    |_main.js
-    |_project.json
+If you plan to add tests or CI, consider using standard tools like:
 
-```
-- app: folder that contains app's file, these file are the target of all scripts output.
-- build: the compile result output will be saved inside this folder.
-- config: here you should put yours .json files to be called like it: app.get('namespace')
-- libs: here should be located the .js scripts files to be called like it: app.js('namespace', 'params')
-- scr: source code folder
-- tmpl: template files, could be any extension
-- main.js: the entrypoint script
-- project.json: project information
+Jest (unit tests)
 
-Now write your scripts at 'src' folder and to compile run:
+ESLint + Prettier (static analysis)
 
-```bash
+GitHub Actions for automation
 
-akumos cp
+❓ Alternatives & Comparisons
 
-```
+Akumos occupies a similar problem space as:
 
-# Examples
+Tool	Approach	Notes
+Yeoman	Generator CLI	More ecosystem plugins, larger community
+Slush	Stream-based templating	Flexible but less opinionated
+Cookiecutter	Python-based templating	Great for polyglot scaffolds
+Plop.js	Micro-generator	Lightweight for specific templates
 
-Here at 'examples' folder you can find a few Akumos project examples.
+Unlike some of these, Akumos focuses on a template-engine CLI with integrated project structure without heavy external dependencies.
+
+🌟 Contributing
+
+Contributions are welcome. Typical workflow:
+
+Fork the repository
+
+Create a feature branch
+
+Open a pull request with a clear description
+
+Please add tests and update the examples when relevant.
+
+📜 License
+
+Distributed under the MIT License.
+See LICENSE for details.
+
+📬 Contact
+
+For questions or support, open an issue or connect via GitHub.
