@@ -1,4 +1,4 @@
-Akumos Platform
+# Akumos Platform
 
 Akumos Platform is a prompt engineering assistant engine — a code template engine with enhanced templates and integrations.
 
@@ -6,7 +6,7 @@ It enables developers to quickly scaffold, compile, and manage template-driven p
 
 🚀 Note: This README assumes familiarity with CLI tools and Node.js ecosystems. If you're exploring alternatives to template engines (e.g., Yeoman, Slush), see the “Alternatives & Comparisons” section below.
 
-🧠 Key Concepts
+🧠 ***Key Concepts***
 
 At its core, Akumos provides:
 
@@ -18,7 +18,7 @@ A structure optimized for modular and reusable templates.
 
 Examples to jump-start development.
 
-🛠️ Features
+🛠️ ***Features***
 
 Project bootstrapping (akumos init)
 
@@ -30,7 +30,7 @@ Minimal dependencies and easy extendability
 
 Example projects included under examples/
 
-📦 Prerequisites
+📦 ***Prerequisites***
 
 Before installing, make sure you have:
 
@@ -38,7 +38,7 @@ Node.js (v14+ recommended)
 
 npm (bundled with Node.js)
 
-📥 Installation
+📥 ***Installation***
 
 Clone the repository:
 
@@ -50,7 +50,7 @@ Then install globally:
 
 sudo npm install -g .
 
-🚀 Getting Started
+🚀 ***Getting Started***
 
 After installation, you can create a new project:
 
@@ -71,10 +71,10 @@ akumos cp
 
 The engine generates an output in the build/ directory by default.
 
-📁 Project Structure
+📁 ***Project Structure***
 
 Typical structure of an Akumos scaffold:
-
+```bash
 hello-world/
 ├─ app/
 ├─ build/
@@ -84,7 +84,7 @@ hello-world/
 ├─ tmpl/
 ├─ main.js
 └─ project.json
-
+```
 
 app/: Runtime artifacts
 
@@ -102,17 +102,17 @@ main.js: Entry point
 
 project.json: Project metadata
 
-📘 Examples
+📘 ***Examples***
 
 Check the examples/ folder for ready-to-run sample projects.
-
+```bash
 cd examples/hello-world
 akumos cp
-
+```
 
 This demonstrates a typical Akumos project lifecycle.
 
-🧪 Testing & Validation
+🧪 ***Testing & Validation***
 
 Include test commands here if available — currently none are provided.
 
@@ -124,7 +124,7 @@ ESLint + Prettier (static analysis)
 
 GitHub Actions for automation
 
-❓ Alternatives & Comparisons
+❓ ***Alternatives & Comparisons***
 
 Akumos occupies a similar problem space as:
 
@@ -136,7 +136,7 @@ Plop.js	Micro-generator	Lightweight for specific templates
 
 Unlike some of these, Akumos focuses on a template-engine CLI with integrated project structure without heavy external dependencies.
 
-🌟 Contributing
+🌟 ***Contributing***
 
 Contributions are welcome. Typical workflow:
 
@@ -148,11 +148,11 @@ Open a pull request with a clear description
 
 Please add tests and update the examples when relevant.
 
-📜 License
+📜 ***License***
 
 Distributed under the MIT License.
 See LICENSE for details.
 
-📬 Contact
+📬 ***Contact***
 
 For questions or support, open an issue or connect via GitHub.
